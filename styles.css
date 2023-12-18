@@ -31,3 +31,15 @@ h1 {
     font-size: 55px;
 }
 
+button{
+    color: black;
+    border: black;
+    background-color: red;
+    cursor: pointer;
+    padding: 5px;
+}
+
+button:hover{
+    background-color: white;
+    transition: 0.3s;
+}
