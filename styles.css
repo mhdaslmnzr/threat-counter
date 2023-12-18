@@ -1,0 +1,33 @@
+*{
+margin:0;
+padding:0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding:20px;
+
+
+}
+
+main{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+
+}
+
+.hero{
+background-color: #a8e6cf;
+border-radius: 25px;
+max-width: 80em;
+margin: 20px auto;
+padding: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle box shadow for a cute effect */
+text-align: center;
+}
+
+h1 {
+    font-size: 55px;
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTI-Q</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="hero">
+	<center>
+		<h1>CTI-Q</h1>
+    		<p>"Please upload your file in <a class="download-link" href="sample.csv" download="sample.csv">csv</a> format only"</p>
+
+    		<input type="file" id="fileInput" accept=".csv" onchange="handleFile()">
+		<br>
+		 
+		<button id="refreshButton">Reset</button>
+	</center>	
+   </div>
+    
+
+<main>
+    <div class="chart-container" >
+        <canvas id="capabilityChart" ></canvas>
+    </div>
+
+    <div class="chart-container" >
+        <canvas id="motiveChart" ></canvas>
+    </div>
+
+    <div class="chart-container" >
+        <canvas id="adversaryTypeChart"></canvas>
+    </div>
+</main>
+
+    
+
+    <script src="script.js"></script>
+	
+<script>
+    // JavaScript code to refresh the window
+    document.getElementById('refreshButton').addEventListener('click', function () {
+        location.reload();
+    });
+</script>
+</body>
+</html>
